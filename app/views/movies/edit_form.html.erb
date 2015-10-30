@@ -1,0 +1,127 @@
+  <div class="container">
+
+
+    <div class="page-header">
+  <h1>Edit Movie #<%= @movie.id %></h1>
+</div>
+
+<form action="/edit_movie/<%= @movie.id %>" class="form-horizontal">
+  <!-- Label and input for title -->
+  <div class="form-group">
+    <label for="title" class="col-sm-2 control-label">
+      Title
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="title" name="title" placeholder="Title" class="form-control" value="<%= @movie.title %>">
+    </div>
+  </div>
+
+  <!-- Label and input for year -->
+  <div class="form-group">
+    <label for="year" class="col-sm-2 control-label">
+      Year
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="year" name="year" placeholder="Year" class="form-control" value="<%= @movie.year %>">
+    </div>
+  </div>
+
+  <!-- Label and input for duration -->
+  <div class="form-group">
+    <label for="duration" class="col-sm-2 control-label">
+      Duration
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="duration" name="duration" placeholder="Duration" class="form-control" value="<%= @movie.duration %>">
+    </div>
+  </div>
+
+  <!-- Label and input for description -->
+  <div class="form-group">
+    <label for="description" class="col-sm-2 control-label">
+      Description
+    </label>
+    <div class="col-sm-10">
+      <textarea id="description" name="description" placeholder="Description" class="form-control" rows="3" value="<%= @movie.description %>"></textarea>
+    </div>
+  </div>
+
+  <!-- Label and input for image_url -->
+  <div class="form-group">
+    <label for="image_url" class="col-sm-2 control-label">
+      Image url
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="image_url" name="image_url" placeholder="Image url" class="form-control" value="<%= @movie.image_url %>">
+    </div>
+  </div>
+
+  <!-- Label and input for director_id -->
+  <div class="form-group">
+    <label for="director_id" class="col-sm-2 control-label">
+      Director
+    </label>
+    <div class="col-sm-10">
+      <select class="form-control" id="director_id" name="director_id"><option selected="selected" value="131">Michel Gondry</option>
+<option value="132">Mel Gibson</option>
+<option value="133">Chan-wook Park</option>
+<option value="134">Curtis Hanson</option>
+<option value="135">Stanley Donen</option>
+<option value="137">Terry Gilliam</option>
+<option value="138">George Roy Hill</option>
+<option value="90">David Fincher</option>
+<option value="91">Irvin Kershner</option>
+<option value="92">Milos Forman</option>
+<option value="93">Martin Scorsese</option>
+<option value="94">George Lucas</option>
+<option value="95">Akira Kurosawa</option>
+<option value="96">Robert Zemeckis</option>
+<option value="97">Andy Wachowski</option>
+<option value="98">Kátia Lund</option>
+<option value="99">Jonathan Demme</option>
+<option value="100">Michael Curtiz</option>
+<option value="101">Bryan Singer</option>
+<option value="82">Frank Darabont</option>
+<option value="83">Francis Ford Coppola</option>
+<option value="84">Quentin Tarantino</option>
+<option value="85">Sergio Leone</option>
+<option value="86">Christopher Nolan</option>
+<option value="87">Sidney Lumet</option>
+<option value="89">Peter Jackson</option>
+<option value="121">Jean-Pierre Jeunet</option>
+<option value="122">David Lean</option>
+<option value="102">Alfred Hitchcock</option>
+<option value="103">Frank Capra</option>
+<option value="104">Luc Besson</option>
+<option value="105">Billy Wilder</option>
+<option value="106">Tony Kaye</option>
+<option value="107">James Cameron</option>
+<option value="108">Charles Chaplin</option>
+<option value="109">Stanley Kubrick</option>
+<option value="110">Ridley Scott</option>
+<option value="123">Robert Mulligan</option>
+<option value="124">Wolfgang Petersen</option>
+<option value="111">Hayao Miyazaki</option>
+<option value="112">Orson Welles</option>
+<option value="113">Roberto Benigni</option>
+<option value="114">Roman Polanski</option>
+<option value="115">Fritz Lang</option>
+<option value="116">Sam Mendes</option>
+<option value="117">Andrew Stanton</option>
+<option value="118">Olivier Nakache</option>
+<option value="119">Lee Unkrich</option>
+<option value="120">Florian Henckel von Donnersmarck</option>
+<option value="139">Joseph L. Mankiewicz</option>
+<option value="140">Clint Eastwood</option>
+<option value="141">Isao Takahata</option>
+<option value="142">John McTiernan</option></select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" value="Update Movie" class="btn btn-primary">
+    </div>
+  </div>
+</form>
+</div>
